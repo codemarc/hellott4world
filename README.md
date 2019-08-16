@@ -13,4 +13,9 @@ A repo to hold tt4 PoC test code
 3. Update the package version with npm
     > npm version 0.0.3
 
-4. Publish and check
+4. Push the changes
+    > git push
+
+3. Publish and check
+    > npm publish  
+    > npm view hello-t4-world
