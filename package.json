@@ -1,0 +1,12 @@
+{
+  "name": "hello-t4-world",
+  "version": "0.0.0",
+  "description": "A simple PoC using T4 Templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "https://github.com/codemarc/hellott4world",
+  "author": "marc j. greenberg <codemarc@gmail.com>",
+  "license": "MIT"
+}
