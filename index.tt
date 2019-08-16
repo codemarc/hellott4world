@@ -1,6 +1,25 @@
 <#@ output extension=".js" #>
-module.exports = function() {
-    let msg='Hello T4Template world'
-    console.log(msg)
-    return msg
+<# var properties = new string [] {"Up", "Down", "Left", "Right"}; #>
+
+// Imaging a Javascript Enumeration
+// enum Direction { Up = 1, Down, Left, Right }
+
+var Direction;
+(function (Direction) {
+<# int i=0;
+   foreach (string propertyName in properties)  { #>
+    Direction[Direction["<#= propertyName #>"] = <#= ++i #>] = "<#= propertyName #>"
+<# } #>
+})(Direction || (Direction = {}));
+
+module.exports = {
+    hello: () => 'Hello T4Template world',
+    arrow: (way) => Direction[way]
 }
+
+// Look what I can do...
+// console.log(module.exports.hello())
+// console.log(module.exports.arrow("Up"))
+// console.log(module.exports.arrow("Down"))
+// console.log(module.exports.arrow(3))
+// console.log(module.exports.arrow(4))
