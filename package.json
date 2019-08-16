@@ -1,6 +1,6 @@
 {
   "name": "hello-t4-world",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple PoC using T4 Templates",
   "main": "index.js",
   "scripts": {
