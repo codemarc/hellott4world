@@ -16,6 +16,6 @@ A repo to hold tt4 PoC test code
 4. Push the changes
     > git push
 
-3. Publish and check
+5. [Publish and check](https://www.npmjs.com/package/hello-t4-world)
     > npm publish  
     > npm view hello-t4-world

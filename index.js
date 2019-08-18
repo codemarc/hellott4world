@@ -1,5 +1,5 @@
 ﻿
-// Imaging a Javascript Enumeration
+// Imagine a JavaScript Enumeration
 // enum Direction { Up = 1, Down, Left, Right }
 
 var Direction;
